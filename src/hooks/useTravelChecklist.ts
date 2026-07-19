@@ -116,9 +116,14 @@ function normalize(parsed: TravelChecklist): TravelChecklist {
           cities: ct.cities?.length ? ct.cities : [emptyCityTrip(1)],
         }))
       : [emptyCountryTrip(1)]
+  const travelers = resizeTravelers(parsed.travelers ?? [], count).map((tr) => ({
+    ...tr,
+    name: tr.name ?? '',
+    nameEn: tr.nameEn ?? '',
+  }))
   return {
     travelerCount: count,
-    travelers: resizeTravelers(parsed.travelers ?? [], count),
+    travelers,
     countries,
   }
 }

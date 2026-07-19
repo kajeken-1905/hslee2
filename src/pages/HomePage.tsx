@@ -93,6 +93,7 @@ function TravelerBlock({
   index,
   canRemove,
   onName,
+  onNameEn,
   onPassport,
   onEurail,
   onFlight,
@@ -102,6 +103,7 @@ function TravelerBlock({
   index: number
   canRemove: boolean
   onName: (name: string) => void
+  onNameEn: (nameEn: string) => void
   onPassport: (patch: Partial<TravelerInfo['passport']>) => void
   onEurail: (patch: Partial<TravelerInfo['eurail']>) => void
   onFlight: (key: 'outbound' | 'inbound', patch: Partial<FlightInfo>) => void
@@ -110,9 +112,9 @@ function TravelerBlock({
   const { lang } = useLanguage()
   const n = index + 1
   const baseTitle = `${t('traveler', lang)} ${n}`
-  const title = traveler.name.trim()
-    ? `${baseTitle}  ${traveler.name.trim()}`
-    : baseTitle
+  const nameParts = [traveler.name.trim(), traveler.nameEn.trim()].filter(Boolean)
+  const title = nameParts.length ? `${baseTitle}  ${nameParts.join(' · ')}` : baseTitle
+  const summary = nameParts.length ? nameParts.join(' · ') : undefined
 
   return (
     <ChecklistSection
@@ -121,7 +123,7 @@ function TravelerBlock({
       nested
       collapsible
       defaultOpen={false}
-      summary={traveler.name.trim() || undefined}
+      summary={summary}
     >
       <div className="checklist-grid">
         <Field label={t('travelerNameKo', lang)}>
@@ -130,6 +132,15 @@ function TravelerBlock({
             value={traveler.name}
             onChange={(e) => onName(e.target.value)}
             placeholder={lang === 'ko' ? '예: 김민수' : 'Korean name'}
+          />
+        </Field>
+        <Field label={t('travelerNameEn', lang)}>
+          <input
+            className="checklist-input"
+            value={traveler.nameEn}
+            onChange={(e) => onNameEn(e.target.value)}
+            placeholder={lang === 'ko' ? '예: KIM MIN SU' : 'e.g. KIM MIN SU'}
+            autoCapitalize="characters"
           />
         </Field>
       </div>
@@ -488,11 +499,12 @@ export function HomePage() {
           summary={
             data.travelers.length > 0
               ? data.travelers
-                  .map((tr, i) =>
-                    tr.name.trim()
-                      ? `${t('traveler', lang)} ${i + 1} ${tr.name.trim()}`
-                      : `${t('traveler', lang)} ${i + 1}`,
-                  )
+                  .map((tr, i) => {
+                    const parts = [tr.name.trim(), tr.nameEn?.trim()].filter(Boolean)
+                    return parts.length
+                      ? `${t('traveler', lang)} ${i + 1} ${parts.join(' · ')}`
+                      : `${t('traveler', lang)} ${i + 1}`
+                  })
                   .join(', ')
               : undefined
           }
@@ -505,6 +517,7 @@ export function HomePage() {
                 index={index}
                 canRemove={data.travelers.length > 1}
                 onName={(name) => updateTraveler(traveler.id, { name })}
+                onNameEn={(nameEn) => updateTraveler(traveler.id, { nameEn })}
                 onPassport={(patch) => updatePassport(traveler.id, patch)}
                 onEurail={(patch) => updateEurail(traveler.id, patch)}
                 onFlight={(key, patch) => updateFlight(traveler.id, key, patch)}

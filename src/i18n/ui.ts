@@ -26,6 +26,7 @@ export const ui = {
   traveler: { ko: '여행자', en: 'Traveler' },
   travelerName: { ko: '이름', en: 'Name' },
   travelerNameKo: { ko: '한글 이름', en: 'Korean name' },
+  travelerNameEn: { ko: '영문 이름', en: 'English name' },
   addTraveler: { ko: '여행자 추가', en: 'Add traveler' },
   removeTraveler: { ko: '이 여행자 삭제', en: 'Remove this traveler' },
   passportInfo: { ko: '여권 정보', en: 'Passport' },

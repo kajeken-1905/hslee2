@@ -25,6 +25,8 @@ export interface TravelerInfo {
   id: string
   /** Korean display name shown next to traveler label */
   name: string
+  /** English / passport name */
+  nameEn: string
   passport: PassportInfo
   eurail: EurailInfo
   outbound: FlightInfo
@@ -84,6 +86,7 @@ export function emptyTraveler(index: number): TravelerInfo {
   return {
     id: `traveler-${Date.now()}-${index}-${Math.random().toString(36).slice(2, 7)}`,
     name: '',
+    nameEn: '',
     passport: emptyPassport(),
     eurail: emptyEurail(),
     outbound: emptyFlight(),
