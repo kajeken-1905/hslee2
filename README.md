@@ -1,21 +1,20 @@
-# 북유럽·베네룩스 미식 여행 (iPhone 웹앱)
+# My Vacation Plan
 
-8개국 여행 미식 가이드 — **Phase 1: 골격 + 수도 도시 데이터**
+유럽 8개국 여행 체크리스트 · 도시 가이드 웹앱  
+**사이트:** https://kajeken-1905.github.io/hslee2/
 
-## 실행
+## 실행 (로컬)
 
 ```bash
 npm install
 npm run dev
 ```
 
-브라우저에서 iPhone 폭으로 확인하세요.
+## GitHub Pages 설정
 
-## 범위
+저장소 **Settings → Pages**:
+1. Source: **Deploy from a branch**
+2. Branch: **gh-pages** / **/(root)**
+3. Save
 
-- 국가: 영국, 네덜란드, 룩셈부르크, 벨기에, 노르웨이, 핀란드, 스웨덴, 덴마크
-- 도시: 각국 수도 + 유명 관광 도시
-- 카테고리: 파인 다이닝 / 베이커리 / 카페 / 스타벅스 / 한식당 (별점순)
-- KO / EN 언어 토글, 국기·현지 국명, Google Maps 링크
-
-소도시(기트호른, 플롬 등)는 카테고리별 추천이 적을 수 있습니다.
+코드 저장소: https://github.com/kajeken-1905/hslee2

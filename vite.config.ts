@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// GitHub Pages project site: https://kajeken-1905.github.io/hslee2/
 export default defineConfig({
+  base: '/hslee2/',
   plugins: [react()],
 })

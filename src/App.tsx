@@ -12,7 +12,7 @@ import './styles/app.css'
 export default function App() {
   return (
     <LanguageProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/hslee2">
         <Routes>
           <Route element={<AppShell />}>
             <Route index element={<HomePage />} />
