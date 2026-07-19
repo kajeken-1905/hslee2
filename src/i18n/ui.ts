@@ -70,6 +70,10 @@ export const ui = {
   selectPlaceholder: { ko: '선택', en: 'Select' },
   home: { ko: '홈', en: 'Home' },
   countries: { ko: '국가', en: 'Countries' },
+  adminContactNote: {
+    ko: '문의/건의 사항이 있다면 메일 부탁드립니다',
+    en: 'Please email us with questions or suggestions',
+  },
   language: { ko: '언어', en: 'Language' },
   cities: { ko: '도시', en: 'Cities' },
   highlights: { ko: '관광 포인트', en: 'Highlights' },
