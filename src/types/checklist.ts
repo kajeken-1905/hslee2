@@ -23,7 +23,7 @@ export interface EurailInfo {
 
 export interface TravelerInfo {
   id: string
-  /** Optional display name */
+  /** Korean display name shown next to traveler label */
   name: string
   passport: PassportInfo
   eurail: EurailInfo
@@ -41,16 +41,25 @@ export interface CityTrip {
   transport: string
 }
 
+export interface CountryTrip {
+  id: string
+  countryId: string
+  countryName: string
+  cities: CityTrip[]
+}
+
 export interface TravelChecklist {
   travelerCount: number
   travelers: TravelerInfo[]
-  cities: CityTrip[]
+  countries: CountryTrip[]
 }
 
 export const EURAIL_APP_URL =
   'https://apps.apple.com/app/rail-planner-eurail-interrail/id573078297'
 
 export const MAX_TRAVELERS = 8
+export const MAX_COUNTRIES = 8
+export const MAX_CITIES_PER_COUNTRY = 10
 
 export function emptyFlight(): FlightInfo {
   return {
@@ -84,13 +93,22 @@ export function emptyTraveler(index: number): TravelerInfo {
 
 export function emptyCityTrip(index: number): CityTrip {
   return {
-    id: `city-${Date.now()}-${index}`,
+    id: `city-${Date.now()}-${index}-${Math.random().toString(36).slice(2, 7)}`,
     cityId: '',
     cityName: '',
     fromDate: '',
     toDate: '',
     lodging: '',
     transport: '',
+  }
+}
+
+export function emptyCountryTrip(index: number): CountryTrip {
+  return {
+    id: `country-${Date.now()}-${index}-${Math.random().toString(36).slice(2, 7)}`,
+    countryId: '',
+    countryName: '',
+    cities: [emptyCityTrip(1)],
   }
 }
 
@@ -110,6 +128,6 @@ export function defaultChecklist(): TravelChecklist {
   return {
     travelerCount: 1,
     travelers: [emptyTraveler(1)],
-    cities: [emptyCityTrip(1)],
+    countries: [emptyCountryTrip(1)],
   }
 }

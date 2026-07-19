@@ -7,8 +7,9 @@ export function ChecklistSection({
   collapsible = false,
   defaultOpen = true,
   summary,
+  nested = false,
 }: {
-  step: number
+  step: number | string
   title: string
   children: ReactNode
   /** When true, body is hidden until the header is clicked */
@@ -16,15 +17,23 @@ export function ChecklistSection({
   defaultOpen?: boolean
   /** Extra text shown in the header when collapsed (e.g. traveler name) */
   summary?: string
+  /** Nested under a parent section (e.g. 1-1 traveler) */
+  nested?: boolean
 }) {
   const [open, setOpen] = useState(defaultOpen)
   const bodyId = useId()
+  const stepLabel = String(step)
+  const stepClass =
+    stepLabel.length > 1 ? 'checklist-step checklist-step--wide' : 'checklist-step'
+  const sectionClass = nested
+    ? `checklist-section checklist-section--nested${collapsible ? ' checklist-section--fold' : ''}${collapsible && open ? ' is-open' : ''}`
+    : `checklist-section${collapsible ? ' checklist-section--fold' : ''}${collapsible && open ? ' is-open' : ''}`
 
   if (!collapsible) {
     return (
-      <section className="checklist-section">
+      <section className={sectionClass}>
         <header className="checklist-section-head">
-          <span className="checklist-step">{step}</span>
+          <span className={stepClass}>{stepLabel}</span>
           <h2>{title}</h2>
         </header>
         <div className="checklist-section-body">{children}</div>
@@ -33,7 +42,7 @@ export function ChecklistSection({
   }
 
   return (
-    <section className={`checklist-section checklist-section--fold${open ? ' is-open' : ''}`}>
+    <section className={sectionClass}>
       <button
         type="button"
         className="checklist-section-toggle"
@@ -41,7 +50,7 @@ export function ChecklistSection({
         aria-controls={bodyId}
         onClick={() => setOpen((v) => !v)}
       >
-        <span className="checklist-step">{step}</span>
+        <span className={stepClass}>{stepLabel}</span>
         <span className="checklist-section-toggle-text">
           <span className="checklist-section-toggle-title">{title}</span>
           {!open && summary ? (

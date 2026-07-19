@@ -794,8 +794,9 @@
 
 .checklist-step {
   flex: 0 0 auto;
-  width: 26px;
+  min-width: 26px;
   height: 26px;
+  padding: 0 6px;
   border-radius: 8px;
   display: grid;
   place-items: center;
@@ -803,6 +804,28 @@
   color: #fff;
   font-size: 12px;
   font-weight: 700;
+}
+
+.checklist-step--wide {
+  font-size: 11px;
+  letter-spacing: -0.02em;
+}
+
+.checklist-section--nested {
+  background: #faf8f5;
+  border-color: rgba(20, 17, 15, 0.08);
+}
+
+.traveler-tree,
+.country-city-tree {
+  display: grid;
+  gap: 10px;
+}
+
+.checklist-add--ghost {
+  background: #fff;
+  color: var(--text);
+  border: 1px dashed var(--line);
 }
 
 .checklist-section-body {
