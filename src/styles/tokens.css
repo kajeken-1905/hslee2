@@ -1,0 +1,54 @@
+:root {
+  --bg: #f3f1ec;
+  --surface: #ffffff;
+  --text: #14110f;
+  --muted: #6b645c;
+  --line: rgba(20, 17, 15, 0.08);
+  --shadow: 0 10px 30px rgba(20, 17, 15, 0.08);
+  --radius: 18px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --frame-max: 430px;
+  --font-display: 'Fraunces', 'Apple SD Gothic Neo', serif;
+  --font-body: 'Pretendard', 'Avenir Next', 'Apple SD Gothic Neo', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background:
+    radial-gradient(circle at top, #fff8ef 0%, transparent 45%),
+    linear-gradient(180deg, #e7eef5 0%, #f3f1ec 40%, #efe7df 100%);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
