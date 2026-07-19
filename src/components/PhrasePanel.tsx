@@ -1,6 +1,6 @@
 import { useId, useState } from 'react'
 import { getCountryPhrases } from '../data/phrases'
-import { speakText } from '../utils/speak'
+import { playPhraseAudio } from '../utils/playPhraseAudio'
 import { useLanguage } from '../contexts/LanguageContext'
 import { t } from '../i18n/ui'
 
@@ -40,7 +40,14 @@ export function PhrasePanel({ countryId }: { countryId: string }) {
                 type="button"
                 className="phrase-play"
                 aria-label={`${t('playPhrase', lang)}: ${line.native}`}
-                onClick={() => speakText(line.native, phrases.speechLangs)}
+                onClick={() =>
+                  playPhraseAudio(
+                    countryId,
+                    line.id,
+                    line.native,
+                    phrases.speechLangs,
+                  )
+                }
               >
                 ▶
               </button>
