@@ -1,6 +1,7 @@
 import type { CityHighlight } from '../types'
 import { useLanguage } from '../contexts/LanguageContext'
 import { t } from '../i18n/ui'
+import { assetUrl } from '../utils/assetUrl'
 
 export function HighlightCard({ highlight }: { highlight: CityHighlight }) {
   const { lang } = useLanguage()
@@ -15,7 +16,7 @@ export function HighlightCard({ highlight }: { highlight: CityHighlight }) {
     >
       <div
         className="highlight-card-media"
-        style={{ backgroundImage: `url(${highlight.image})` }}
+        style={{ backgroundImage: `url(${assetUrl(highlight.image)})` }}
         role="img"
         aria-label={highlight.name[lang]}
       />

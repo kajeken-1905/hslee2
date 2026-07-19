@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import type { City } from '../types'
 import { useLanguage } from '../contexts/LanguageContext'
+import { assetUrl } from '../utils/assetUrl'
 
 export function CityListItem({ city }: { city: City }) {
   const { lang } = useLanguage()
@@ -16,7 +17,7 @@ export function CityListItem({ city }: { city: City }) {
       style={{
         backgroundImage: `
           linear-gradient(100deg, rgba(10, 12, 18, 0.78) 0%, rgba(10, 12, 18, 0.35) 55%, rgba(10, 12, 18, 0.55) 100%),
-          url(${city.signatureImage})
+          url(${assetUrl(city.signatureImage)})
         `,
       }}
     >

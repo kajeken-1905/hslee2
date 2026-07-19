@@ -8,6 +8,7 @@ import { useLanguage } from '../contexts/LanguageContext'
 import { useDailyExchangeRates } from '../hooks/useDailyExchangeRates'
 import { formatFxLine } from '../services/exchangeRates'
 import { t } from '../i18n/ui'
+import { assetUrl } from '../utils/assetUrl'
 
 export function CountryPage() {
   const { countryId = '' } = useParams()
@@ -62,7 +63,7 @@ export function CountryPage() {
         style={{
           backgroundImage: `
             linear-gradient(180deg, rgba(8, 10, 16, 0.78) 0%, rgba(8, 10, 16, 0.55) 45%, rgba(8, 10, 16, 0.82) 100%),
-            url(${country.flagImage})
+            url(${assetUrl(country.flagImage)})
           `,
         }}
       >

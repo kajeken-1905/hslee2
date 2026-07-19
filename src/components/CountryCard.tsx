@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import type { Country } from '../types'
 import { useLanguage } from '../contexts/LanguageContext'
 import { t } from '../i18n/ui'
+import { assetUrl } from '../utils/assetUrl'
 
 export function CountryCard({ country }: { country: Country }) {
   const { lang } = useLanguage()
@@ -16,7 +17,7 @@ export function CountryCard({ country }: { country: Country }) {
       style={{
         backgroundImage: `
           linear-gradient(160deg, rgba(12, 14, 20, 0.72) 0%, rgba(12, 14, 20, 0.45) 45%, rgba(12, 14, 20, 0.62) 100%),
-          url(${country.landmarkImage})
+          url(${assetUrl(country.landmarkImage)})
         `,
       }}
     >
