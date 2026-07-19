@@ -1,6 +1,9 @@
 import { CATEGORIES, type CategoryId } from '../types'
 import { useLanguage } from '../contexts/LanguageContext'
 
+const ROW1: CategoryId[] = ['fine_dining', 'korean', 'asian', 'cafe']
+const ROW2: CategoryId[] = ['bakery', 'fashion', 'grocery']
+
 export function CategoryTabs({
   value,
   onChange,
@@ -10,9 +13,11 @@ export function CategoryTabs({
 }) {
   const { lang } = useLanguage()
 
-  return (
-    <div className="category-tabs" role="tablist" aria-label="Categories">
-      {CATEGORIES.map((cat) => (
+  const renderRow = (ids: CategoryId[]) =>
+    ids.map((id) => {
+      const cat = CATEGORIES.find((c) => c.id === id)
+      if (!cat) return null
+      return (
         <button
           key={cat.id}
           type="button"
@@ -23,7 +28,13 @@ export function CategoryTabs({
         >
           {lang === 'ko' ? cat.ko : cat.en}
         </button>
-      ))}
+      )
+    })
+
+  return (
+    <div className="category-tabs" role="tablist" aria-label="Categories">
+      <div className="category-tabs-row">{renderRow(ROW1)}</div>
+      <div className="category-tabs-row">{renderRow(ROW2)}</div>
     </div>
   )
 }

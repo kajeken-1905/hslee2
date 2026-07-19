@@ -15,7 +15,6 @@ export const placesFIExtra: Place[] = [
   place('turku-cafe-2', 'turku', 'cafe', 'Café Staffeln', 4.3, 'Turku', '로컬 카페.', 'Local café.', { reviewCount: 680 }),
   place('turku-cafe-3', 'turku', 'cafe', 'River cafés', 4.3, 'Turku', '강변 카페.', 'River cafés.', { reviewCount: 1200 }),
   place('turku-cafe-4', 'turku', 'cafe', 'Market Square cafés', 4.2, 'Turku', '시장 카페.', 'Market cafés.', { reviewCount: 900 }),
-  place('turku-starbucks-1', 'turku', 'starbucks', 'Starbucks (Turku)', 3.9, 'Turku', '센터.', 'Centre.', { reviewCount: 800 }),
   place('turku-korean-1', 'turku', 'korean', 'Korean Turku', 4.2, 'Turku', '제한적.', 'Limited.', { reviewCount: 280 }),
 
   // —— tampere ——
@@ -31,7 +30,6 @@ export const placesFIExtra: Place[] = [
   place('tampere-cafe-2', 'tampere', 'cafe', 'Specialty coffee Tampere', 4.5, 'Tampere', '스페셜티.', 'Specialty.', { reviewCount: 980 }),
   place('tampere-cafe-3', 'tampere', 'cafe', 'Finlayson area cafés', 4.3, 'Tampere', '공장지구 카페.', 'Factory-area cafés.', { reviewCount: 860 }),
   place('tampere-cafe-4', 'tampere', 'cafe', 'Student cafés', 4.2, 'Tampere', '대학 카페.', 'Student cafés.', { reviewCount: 720 }),
-  place('tampere-starbucks-1', 'tampere', 'starbucks', 'Starbucks (Tampere)', 3.9, 'Tampere', '센터.', 'Centre.', { reviewCount: 900 }),
   place('tampere-korean-1', 'tampere', 'korean', 'Korean Tampere', 4.3, 'Tampere', '캐주얼 한식.', 'Casual Korean.', { reviewCount: 420 }),
   place('tampere-korean-2', 'tampere', 'korean', 'Kimchi Tampere', 4.2, 'Tampere', '한식.', 'Korean.', { reviewCount: 320 }),
 
@@ -45,7 +43,6 @@ export const placesFIExtra: Place[] = [
   place('rovaniemi-cafe-1', 'rovaniemi', 'cafe', 'Café & Shop Arktikum', 4.3, 'Rovaniemi', '박물관 카페.', 'Museum café.', { reviewCount: 860 }),
   place('rovaniemi-cafe-2', 'rovaniemi', 'cafe', 'Town centre cafés', 4.3, 'Rovaniemi', '시내 카페.', 'Town cafés.', { reviewCount: 980 }),
   place('rovaniemi-cafe-3', 'rovaniemi', 'cafe', 'Santa Village cafés', 4.2, 'Rovaniemi', '산타 마을 카페.', 'Santa Village cafés.', { reviewCount: 1800 }),
-  place('rovaniemi-starbucks-1', 'rovaniemi', 'starbucks', 'Limited Starbucks / transit coffee', 3.8, 'Rovaniemi', '체인 제한적.', 'Limited chain presence.', { reviewCount: 200 }),
   place('rovaniemi-korean-1', 'rovaniemi', 'korean', 'Korean Rovaniemi', 4.0, 'Rovaniemi', '한식 제한적.', 'Limited Korean.', { reviewCount: 140 }),
 
   // —— porvoo ——

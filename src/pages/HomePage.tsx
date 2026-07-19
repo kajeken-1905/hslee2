@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { LanguageToggle } from '../components/LanguageToggle'
 import { ChecklistSection, Field } from '../components/ChecklistSection'
 import { YesNoSelect } from '../components/YesNoSelect'
@@ -286,6 +287,15 @@ function CityTripFields({
             ))}
           </select>
         </Field>
+        {trip.cityId ? (
+          <Link
+            to={`/city/${trip.cityId}`}
+            className="checklist-shortcut checklist-shortcut--inline"
+            aria-label={t('shortcutCity', lang)}
+          >
+            {t('shortcut', lang)}
+          </Link>
+        ) : null}
         <Field label={t('fromDate', lang)}>
           <input
             type="date"
@@ -394,6 +404,15 @@ function CountryTripBlock({
             ))}
           </select>
         </Field>
+        {trip.countryId ? (
+          <Link
+            to={`/country/${trip.countryId}`}
+            className="checklist-shortcut checklist-shortcut--inline"
+            aria-label={t('shortcutCountry', lang)}
+          >
+            {t('shortcut', lang)}
+          </Link>
+        ) : null}
       </div>
 
       <div className="country-city-tree">

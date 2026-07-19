@@ -6,8 +6,8 @@ export const ui = {
     en: 'My Vacation Plan',
   },
   appSubtitle: {
-    ko: '8개국 유명 도시의 맛집·카페 가이드',
-    en: 'Food & café guide across 8 countries’ top cities',
+    ko: '8개국 유명 도시의 맛집·쇼핑 가이드',
+    en: 'Food & shopping guide across 8 countries’ top cities',
   },
   checklistSubtitle: {
     ko: '출국 전 준비사항을 기록하세요',
@@ -49,6 +49,9 @@ export const ui = {
   country: { ko: '국가', en: 'Country' },
   selectCountry: { ko: '국가 선택', en: 'Select a country' },
   selectCountryFirst: { ko: '먼저 국가를 선택하세요', en: 'Select a country first' },
+  shortcut: { ko: '바로가기', en: 'Open' },
+  shortcutCountry: { ko: '선택한 국가 보기', en: 'View selected country' },
+  shortcutCity: { ko: '선택한 도시 보기', en: 'View selected city' },
   city: { ko: '도시', en: 'City' },
   selectCity: { ko: '도시 선택', en: 'Select a city' },
   fromDate: { ko: 'From (년·월·일)', en: 'From date' },
@@ -73,7 +76,7 @@ export const ui = {
     ko: '카드를 누르면 Google Maps에서 위치를 확인할 수 있어요.',
     en: 'Tap a card to open the location in Google Maps.',
   },
-  foodGuide: { ko: '맛집 · 카페', en: 'Food & cafés' },
+  foodGuide: { ko: '맛집 · 쇼핑', en: 'Food & shopping' },
   population: { ko: '인구', en: 'Population' },
   area: { ko: '면적', en: 'Area' },
   capital: { ko: '수도', en: 'Capital' },
@@ -91,7 +94,7 @@ export const ui = {
   openMaps: { ko: 'Google Maps에서 열기', en: 'Open in Google Maps' },
   rating: { ko: '별점', en: 'Rating' },
   reviews: { ko: '리뷰', en: 'reviews' },
-  back: { ko: '뒤로', en: 'Back' },
+  back: { ko: '이전 페이지', en: 'Previous page' },
   limitedCategory: {
     ko: '이 도시에서 해당 카테고리 추천이 제한적입니다.',
     en: 'Limited recommendations in this category for this city.',

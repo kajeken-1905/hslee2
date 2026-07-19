@@ -18,9 +18,6 @@ export const placesNLExtra: Place[] = [
   place('rotterdam-cafe-3', 'rotterdam', 'cafe', 'Urban Espresso Bar', 4.4, 'Rotterdam', '에스프레소 바.', 'Espresso bar.', { reviewCount: 720 }),
   place('rotterdam-cafe-4', 'rotterdam', 'cafe', 'Hopper Coffee', 4.4, 'Rotterdam', '브런치 카페.', 'Brunch café.', { reviewCount: 1100 }),
   place('rotterdam-cafe-5', 'rotterdam', 'cafe', 'Anne&Max', 4.3, 'Rotterdam', '캐주얼 카페.', 'Casual café.', { reviewCount: 1400 }),
-  place('rotterdam-starbucks-1', 'rotterdam', 'starbucks', 'Starbucks (Markthal)', 4.0, 'Markthal', '마켓홀.', 'Markthal.', { reviewCount: 1500 }),
-  place('rotterdam-starbucks-2', 'rotterdam', 'starbucks', 'Starbucks (Centraal)', 3.9, 'Rotterdam Centraal', '중앙역.', 'Central station.', { reviewCount: 1700 }),
-  place('rotterdam-starbucks-3', 'rotterdam', 'starbucks', 'Starbucks (Koopgoot)', 3.9, 'Koopgoot', '쇼핑.', 'Shopping.', { reviewCount: 980 }),
   place('rotterdam-korean-1', 'rotterdam', 'korean', 'Seoul Food Rotterdam', 4.4, 'Rotterdam', '캐주얼 한식.', 'Casual Korean.', { reviewCount: 860 }),
   place('rotterdam-korean-2', 'rotterdam', 'korean', 'Korean BBQ Rotterdam', 4.3, 'Rotterdam', '구이.', 'BBQ.', { reviewCount: 640 }),
   place('rotterdam-korean-3', 'rotterdam', 'korean', 'Kimchi Rotterdam', 4.3, 'Rotterdam', '한식.', 'Korean.', { reviewCount: 520 }),
@@ -42,8 +39,6 @@ export const placesNLExtra: Place[] = [
   place('the-hague-cafe-3', 'the-hague', 'cafe', 'Va konz Coffee', 4.5, 'The Hague', '로스터리.', 'Roastery.', { reviewCount: 860 }),
   place('the-hague-cafe-4', 'the-hague', 'cafe', 'The Coffee Company', 4.3, 'The Hague', '캐주얼.', 'Casual.', { reviewCount: 1400 }),
   place('the-hague-cafe-5', 'the-hague', 'cafe', 'Scheveningen beach cafés', 4.2, 'Scheveningen', '해변 카페.', 'Beach cafés.', { reviewCount: 1800 }),
-  place('the-hague-starbucks-1', 'the-hague', 'starbucks', 'Starbucks (Grote Marktstraat)', 4.0, 'The Hague', '센터.', 'Centre.', { reviewCount: 1300 }),
-  place('the-hague-starbucks-2', 'the-hague', 'starbucks', 'Starbucks (Centraal)', 3.9, 'Den Haag Centraal', '역.', 'Station.', { reviewCount: 1500 }),
   place('the-hague-korean-1', 'the-hague', 'korean', 'Korean The Hague', 4.3, 'The Hague', '캐주얼 한식.', 'Casual Korean.', { reviewCount: 560 }),
   place('the-hague-korean-2', 'the-hague', 'korean', 'Kimchi Den Haag', 4.2, 'The Hague', '한식.', 'Korean.', { reviewCount: 420 }),
   place('the-hague-korean-3', 'the-hague', 'korean', 'Korean BBQ Den Haag', 4.2, 'The Hague', '구이.', 'BBQ.', { reviewCount: 480 }),
@@ -64,8 +59,6 @@ export const placesNLExtra: Place[] = [
   place('utrecht-cafe-3', 'utrecht', 'cafe', 'ACU café / indie cafés', 4.3, 'Utrecht', '인디 카페.', 'Indie cafés.', { reviewCount: 720 }),
   place('utrecht-cafe-4', 'utrecht', 'cafe', 'Broei', 4.4, 'Utrecht', '브런치.', 'Brunch.', { reviewCount: 980 }),
   place('utrecht-cafe-5', 'utrecht', 'cafe', 'Cartier Café', 4.3, 'Utrecht', '운하 카페.', 'Canal café.', { reviewCount: 1400 }),
-  place('utrecht-starbucks-1', 'utrecht', 'starbucks', 'Starbucks (Hoog Catharijne)', 4.0, 'Hoog Catharijne', '쇼핑몰·역.', 'Mall/station.', { reviewCount: 1700 }),
-  place('utrecht-starbucks-2', 'utrecht', 'starbucks', 'Starbucks (City centre)', 3.9, 'Utrecht centre', '센터.', 'Centre.', { reviewCount: 1100 }),
   place('utrecht-korean-1', 'utrecht', 'korean', 'Korean Utrecht', 4.3, 'Utrecht', '한식.', 'Korean.', { reviewCount: 580 }),
   place('utrecht-korean-2', 'utrecht', 'korean', 'Kimchi Utrecht', 4.3, 'Utrecht', '캐주얼.', 'Casual.', { reviewCount: 460 }),
   place('utrecht-korean-3', 'utrecht', 'korean', 'Korean BBQ Utrecht', 4.2, 'Utrecht', '구이.', 'BBQ.', { reviewCount: 420 }),
@@ -84,7 +77,6 @@ export const placesNLExtra: Place[] = [
   place('haarlem-cafe-2', 'haarlem', 'cafe', 'SPØK Haarlem coffee', 4.5, 'Haarlem', '스페셜티.', 'Specialty.', { reviewCount: 720 }),
   place('haarlem-cafe-3', 'haarlem', 'cafe', 'Café Brinkmann', 4.3, 'Haarlem', '광장 카페.', 'Square café.', { reviewCount: 1600 }),
   place('haarlem-cafe-4', 'haarlem', 'cafe', 'Anne&Max Haarlem', 4.3, 'Haarlem', '캐주얼.', 'Casual.', { reviewCount: 980 }),
-  place('haarlem-starbucks-1', 'haarlem', 'starbucks', 'Starbucks (Grote Houtstraat)', 3.9, 'Haarlem', '센터.', 'Centre.', { reviewCount: 900 }),
   place('haarlem-korean-1', 'haarlem', 'korean', 'Korean Haarlem', 4.2, 'Haarlem', '제한적 한식.', 'Limited Korean.', { reviewCount: 320 }),
 
   // —— delft ——
@@ -99,7 +91,6 @@ export const placesNLExtra: Place[] = [
   place('delft-cafe-2', 'delft', 'cafe', 'Kek Delft', 4.5, 'Delft', '인기 카페.', 'Popular café.', { reviewCount: 1600 }),
   place('delft-cafe-3', 'delft', 'cafe', 'Coffee & Cookies Delft', 4.3, 'Delft', '캐주얼.', 'Casual.', { reviewCount: 720 }),
   place('delft-cafe-4', 'delft', 'cafe', 'DOK Delft cafés', 4.2, 'Delft', '도서관 카페.', 'Library cafés.', { reviewCount: 680 }),
-  place('delft-starbucks-1', 'delft', 'starbucks', 'Starbucks (Delft Station)', 3.9, 'Delft Station', '역.', 'Station.', { reviewCount: 1100 }),
   place('delft-korean-1', 'delft', 'korean', 'Korean Delft / Hague day options', 4.1, 'Delft', '한식 제한적.', 'Limited Korean.', { reviewCount: 240 }),
 
   // —— maastricht ——
@@ -114,7 +105,6 @@ export const placesNLExtra: Place[] = [
   place('maastricht-cafe-1', 'maastricht', 'cafe', 'Coffee Lounge Maastricht', 4.4, 'Maastricht', '카페.', 'Café.', { reviewCount: 960 }),
   place('maastricht-cafe-2', 'maastricht', 'cafe', 'Café Zuid', 4.3, 'Maastricht', '캐주얼.', 'Casual.', { reviewCount: 1100 }),
   place('maastricht-cafe-3', 'maastricht', 'cafe', 'Triangel café', 4.3, 'Maastricht', '광장 카페.', 'Square café.', { reviewCount: 860 }),
-  place('maastricht-starbucks-1', 'maastricht', 'starbucks', 'Starbucks (Maastricht)', 3.9, 'Maastricht', '센터/역.', 'Centre/station.', { reviewCount: 1200 }),
   place('maastricht-korean-1', 'maastricht', 'korean', 'Korean Maastricht', 4.2, 'Maastricht', '제한적.', 'Limited.', { reviewCount: 300 }),
 
   // —— giethoorn ——

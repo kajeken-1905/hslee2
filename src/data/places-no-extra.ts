@@ -18,7 +18,6 @@ export const placesNOExtra: Place[] = [
   place('bergen-cafe-3', 'bergen', 'cafe', 'Det Lille Kaffe Kompaniet', 4.5, 'Bergen', '작은 커피 바.', 'Tiny coffee bar.', { reviewCount: 980 }),
   place('bergen-cafe-4', 'bergen', 'cafe', 'Blom', 4.3, 'Bergen', '캐주얼.', 'Casual.', { reviewCount: 720 }),
   place('bergen-cafe-5', 'bergen', 'cafe', 'Fløyen café', 4.2, 'Bergen', '산 정상 카페.', 'Mountain café.', { reviewCount: 2100 }),
-  place('bergen-starbucks-1', 'bergen', 'starbucks', 'Starbucks (Bergen)', 3.9, 'Bergen', '센터.', 'Centre.', { reviewCount: 1200 }),
   place('bergen-korean-1', 'bergen', 'korean', 'Korean Bergen', 4.2, 'Bergen', '제한적 한식.', 'Limited Korean.', { reviewCount: 360 }),
   place('bergen-korean-2', 'bergen', 'korean', 'Asian-Korean kitchens', 4.1, 'Bergen', '캐주얼.', 'Casual.', { reviewCount: 280 }),
 
@@ -35,7 +34,6 @@ export const placesNOExtra: Place[] = [
   place('tromso-cafe-2', 'tromso', 'cafe', 'Ølhallen café vibe nearby', 4.3, 'Tromsø', '로컬 명소.', 'Local landmark vibe.', { reviewCount: 1400 }),
   place('tromso-cafe-3', 'tromso', 'cafe', 'City centre cafés', 4.3, 'Tromsø', '시내 카페.', 'City cafés.', { reviewCount: 1100 }),
   place('tromso-cafe-4', 'tromso', 'cafe', 'Cable car cafés', 4.2, 'Tromsø', '케이블카 카페.', 'Cable car cafés.', { reviewCount: 1600 }),
-  place('tromso-starbucks-1', 'tromso', 'starbucks', 'Starbucks (Tromsø)', 3.8, 'Tromsø', '있으면 센터.', 'Centre if available.', { reviewCount: 600 }),
   place('tromso-korean-1', 'tromso', 'korean', 'Korean Tromsø', 4.1, 'Tromsø', '한식 제한적.', 'Limited Korean.', { reviewCount: 200 }),
 
   // —— stavanger ——
@@ -51,7 +49,6 @@ export const placesNOExtra: Place[] = [
   place('stavanger-cafe-2', 'stavanger', 'cafe', 'Café Sting', 4.3, 'Stavanger', '로컬 카페.', 'Local café.', { reviewCount: 1100 }),
   place('stavanger-cafe-3', 'stavanger', 'cafe', 'Harbour cafés', 4.3, 'Stavanger', '항구 카페.', 'Harbour cafés.', { reviewCount: 1200 }),
   place('stavanger-cafe-4', 'stavanger', 'cafe', 'Gamle Stavanger cafés', 4.2, 'Stavanger', '올드타운 카페.', 'Old Town cafés.', { reviewCount: 860 }),
-  place('stavanger-starbucks-1', 'stavanger', 'starbucks', 'Starbucks (Stavanger)', 3.9, 'Stavanger', '센터.', 'Centre.', { reviewCount: 900 }),
   place('stavanger-korean-1', 'stavanger', 'korean', 'Korean Stavanger', 4.2, 'Stavanger', '제한적.', 'Limited.', { reviewCount: 280 }),
 
   // —— trondheim ——
@@ -67,7 +64,6 @@ export const placesNOExtra: Place[] = [
   place('trondheim-cafe-2', 'trondheim', 'cafe', 'Café Dromedar', 4.4, 'Trondheim', '로컬 카페.', 'Local café.', { reviewCount: 1200 }),
   place('trondheim-cafe-3', 'trondheim', 'cafe', 'Bakklandet cafés', 4.3, 'Trondheim', '컬러풀 카페.', 'Colourful cafés.', { reviewCount: 1600 }),
   place('trondheim-cafe-4', 'trondheim', 'cafe', 'Student cafés', 4.2, 'Trondheim', '대학 카페.', 'Student cafés.', { reviewCount: 860 }),
-  place('trondheim-starbucks-1', 'trondheim', 'starbucks', 'Starbucks (Trondheim)', 3.9, 'Trondheim', '센터.', 'Centre.', { reviewCount: 1000 }),
   place('trondheim-korean-1', 'trondheim', 'korean', 'Korean Trondheim', 4.2, 'Trondheim', '학생가 한식.', 'Student-area Korean.', { reviewCount: 360 }),
 
   // —— alesund ——
@@ -80,7 +76,6 @@ export const placesNOExtra: Place[] = [
   place('alesund-cafe-1', 'alesund', 'cafe', 'Invit Espressobar', 4.5, 'Ålesund', '스페셜티.', 'Specialty.', { reviewCount: 860 }),
   place('alesund-cafe-2', 'alesund', 'cafe', 'Fjellstua café', 4.3, 'Ålesund', '전망 카페.', 'Viewpoint café.', { reviewCount: 1600 }),
   place('alesund-cafe-3', 'alesund', 'cafe', 'Art Nouveau cafés', 4.3, 'Ålesund', '아르누보 거리 카페.', 'Art Nouveau street cafés.', { reviewCount: 720 }),
-  place('alesund-starbucks-1', 'alesund', 'starbucks', 'Limited Starbucks / transit coffee', 3.8, 'Ålesund', '체인 제한적.', 'Limited chain presence.', { reviewCount: 200 }),
   place('alesund-korean-1', 'alesund', 'korean', 'Korean Ålesund', 4.0, 'Ålesund', '한식 매우 제한적.', 'Very limited Korean.', { reviewCount: 120 }),
 
   // —— flam ——

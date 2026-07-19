@@ -2,10 +2,12 @@ export type Lang = 'ko' | 'en'
 
 export type CategoryId =
   | 'fine_dining'
-  | 'bakery'
-  | 'cafe'
-  | 'starbucks'
   | 'korean'
+  | 'asian'
+  | 'cafe'
+  | 'bakery'
+  | 'fashion'
+  | 'grocery'
 
 export interface Country {
   id: string
@@ -81,8 +83,10 @@ export const CATEGORIES: {
   en: string
 }[] = [
   { id: 'fine_dining', ko: '파인 다이닝', en: 'Fine Dining' },
-  { id: 'bakery', ko: '베이커리', en: 'Bakery' },
-  { id: 'cafe', ko: '카페', en: 'Café' },
-  { id: 'starbucks', ko: '스타벅스', en: 'Starbucks' },
   { id: 'korean', ko: '한식당', en: 'Korean' },
+  { id: 'asian', ko: '아시안 레스토랑', en: 'Asian Restaurant' },
+  { id: 'cafe', ko: '카페', en: 'Café' },
+  { id: 'bakery', ko: '베이커리', en: 'Bakery' },
+  { id: 'fashion', ko: '패션', en: 'Fashion' },
+  { id: 'grocery', ko: '식료품', en: 'Grocery' },
 ]

@@ -11,6 +11,9 @@ import { placesNOExtra } from './places-no-extra'
 import { placesFIExtra } from './places-fi-extra'
 import { placesSEExtra } from './places-se-extra'
 import { placesDKExtra } from './places-dk-extra'
+import { placesFashion } from './places-fashion'
+import { placesGrocery } from './places-grocery'
+import { placesAsian } from './places-asian'
 import { sortByRating } from '../utils/sortByRating'
 
 export const places: Place[] = [
@@ -26,6 +29,9 @@ export const places: Place[] = [
   ...placesFIExtra,
   ...placesSEExtra,
   ...placesDKExtra,
+  ...placesFashion,
+  ...placesGrocery,
+  ...placesAsian,
 ]
 
 export function getPlace(id: string) {

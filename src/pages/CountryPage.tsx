@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { getCountry } from '../data/countries'
 import { getCitiesByCountry } from '../data/cities'
 import { CityListItem } from '../components/CityListItem'
@@ -12,17 +12,26 @@ import { assetUrl } from '../utils/assetUrl'
 
 export function CountryPage() {
   const { countryId = '' } = useParams()
+  const navigate = useNavigate()
   const { lang } = useLanguage()
   const country = getCountry(countryId)
   const cityList = getCitiesByCountry(countryId)
   const { getRate, loading, error, data } = useDailyExchangeRates()
 
+  const goBack = () => {
+    if (window.history.length > 1) {
+      navigate(-1)
+      return
+    }
+    navigate('/countries')
+  }
+
   if (!country) {
     return (
       <div className="page-header">
-        <Link to="/" className="back-link">
-          ← {t('home', lang)}
-        </Link>
+        <button type="button" className="back-link" onClick={goBack}>
+          ← {t('back', lang)}
+        </button>
         <h2>Not found</h2>
       </div>
     )
@@ -69,9 +78,9 @@ export function CountryPage() {
       >
         <div className="top-bar" style={{ paddingTop: 0 }}>
           <div>
-            <Link to="/" className="back-link">
-              ← {t('home', lang)}
-            </Link>
+            <button type="button" className="back-link" onClick={goBack}>
+              ← {t('back', lang)}
+            </button>
             <h2 className="local-title">
               <span className="local-title-main">
                 <span className="flag" aria-hidden>

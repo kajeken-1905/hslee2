@@ -199,6 +199,16 @@
   margin-bottom: 10px;
 }
 
+button.back-link {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
 .page-header h2 {
   margin: 0;
   font-family: var(--font-display);
@@ -609,16 +619,15 @@
 }
 
 .category-tabs {
-  display: flex;
+  display: grid;
   gap: 8px;
-  overflow-x: auto;
-  padding-bottom: 4px;
   margin-bottom: 14px;
-  scrollbar-width: none;
 }
 
-.category-tabs::-webkit-scrollbar {
-  display: none;
+.category-tabs-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .category-tabs button {
@@ -913,6 +922,11 @@
   color: #fff;
   font-size: 14px;
   font-weight: 700;
+}
+
+.checklist-shortcut--inline {
+  padding: 11px 12px;
+  font-size: 13px;
 }
 
 .checklist-actions {

@@ -17,7 +17,6 @@ export const placesDKExtra: Place[] = [
   place('aarhus-cafe-3', 'aarhus', 'cafe', 'Latin Quarter cafés', 4.4, 'Aarhus', '라틴쿼터 카페.', 'Latin Quarter cafés.', { reviewCount: 1600 }),
   place('aarhus-cafe-4', 'aarhus', 'cafe', 'ARoS café', 4.2, 'Aarhus', '미술관 카페.', 'Museum café.', { reviewCount: 1200 }),
   place('aarhus-cafe-5', 'aarhus', 'cafe', 'Harbor cafés', 4.3, 'Aarhus', '항구 카페.', 'Harbour cafés.', { reviewCount: 980 }),
-  place('aarhus-starbucks-1', 'aarhus', 'starbucks', 'Starbucks (Aarhus)', 3.9, 'Aarhus', '센터.', 'Centre.', { reviewCount: 1100 }),
   place('aarhus-korean-1', 'aarhus', 'korean', 'Korean Aarhus', 4.3, 'Aarhus', '캐주얼 한식.', 'Casual Korean.', { reviewCount: 480 }),
   place('aarhus-korean-2', 'aarhus', 'korean', 'Kimchi Aarhus', 4.2, 'Aarhus', '한식.', 'Korean.', { reviewCount: 360 }),
 
@@ -33,7 +32,6 @@ export const placesDKExtra: Place[] = [
   place('odense-cafe-2', 'odense', 'cafe', 'Café Biografen', 4.3, 'Odense', '시네마 카페.', 'Cinema café.', { reviewCount: 980 }),
   place('odense-cafe-3', 'odense', 'cafe', 'Old Town cafés', 4.3, 'Odense', '구시가 카페.', 'Old Town cafés.', { reviewCount: 1100 }),
   place('odense-cafe-4', 'odense', 'cafe', 'River cafés', 4.2, 'Odense', '강변 카페.', 'River cafés.', { reviewCount: 800 }),
-  place('odense-starbucks-1', 'odense', 'starbucks', 'Starbucks (Odense)', 3.9, 'Odense', '센터.', 'Centre.', { reviewCount: 900 }),
   place('odense-korean-1', 'odense', 'korean', 'Korean Odense', 4.2, 'Odense', '제한적.', 'Limited.', { reviewCount: 280 }),
 
   // —— aalborg ——
@@ -46,7 +44,6 @@ export const placesDKExtra: Place[] = [
   place('aalborg-cafe-1', 'aalborg', 'cafe', 'Specialty coffee Aalborg', 4.4, 'Aalborg', '스페셜티.', 'Specialty.', { reviewCount: 720 }),
   place('aalborg-cafe-2', 'aalborg', 'cafe', 'Waterfront cafés', 4.3, 'Aalborg', '워터프론트 카페.', 'Waterfront cafés.', { reviewCount: 980 }),
   place('aalborg-cafe-3', 'aalborg', 'cafe', 'Jomfru Ane cafés', 4.2, 'Aalborg', '나이트라이프 거리.', 'Nightlife street cafés.', { reviewCount: 1400 }),
-  place('aalborg-starbucks-1', 'aalborg', 'starbucks', 'Starbucks (Aalborg)', 3.9, 'Aalborg', '센터.', 'Centre.', { reviewCount: 860 }),
   place('aalborg-korean-1', 'aalborg', 'korean', 'Korean Aalborg', 4.2, 'Aalborg', '제한적.', 'Limited.', { reviewCount: 260 }),
 
   // —— roskilde ——
